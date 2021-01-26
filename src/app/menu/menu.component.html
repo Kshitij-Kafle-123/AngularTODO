@@ -1,0 +1,14 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div><a href="https://kshitijkafle.com" class="navbar-brand">Kshitij</a></div>
+        <ul class="navbar-nav">
+            <li><a *ngIf="HardcodedService.isUserLoggedIn()" routerLink="welcome/kshitij" class="nav-link">Home</a></li>
+            <li><a *ngIf="HardcodedService.isUserLoggedIn()" routerLink="/todo" class="nav-link">TODOS</a></li>
+            <li><a *ngIf="HardcodedService.isUserLoggedIn()" routerLink="/contact" class="nav-link">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a *ngIf="!HardcodedService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+            <li><a *ngIf="HardcodedService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut </a></li>
+        </ul>
+    </nav>
+</header>

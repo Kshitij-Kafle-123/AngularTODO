@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo';
+  messege='Welcome to my new angular application';
+  kshitij="i'm kshitij kafle";
 }
